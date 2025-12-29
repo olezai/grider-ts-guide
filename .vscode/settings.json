@@ -1,0 +1,46 @@
+{
+  // --- Editor Visuals & Behavior ---
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.wordWrap": "on",
+  "editor.lineNumbers": "on",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.iconTheme": "vscode-icons",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+
+  // --- Core TypeScript Settings ---
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.suggest.completeFunctionCalls": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.tsdk": "node_modules/typescript/lib", // Uses your project's TS
+
+  // --- Formatting & Linting ---
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+
+  // --- Language Specific Overrides ---
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // --- Explorer & Search ---
+  "explorer.compactFolders": false,
+  "files.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/dist": true
+  }
+}
