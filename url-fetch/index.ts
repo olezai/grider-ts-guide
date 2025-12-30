@@ -15,10 +15,13 @@ axios.get(url).then(response => {
   const title = todo.title;
   const finished = todo.completed;
 
-// easy to make a mistake with response properties
-  console.log(`
+  logTodo(ID, title, finished);
+});
+
+const logTodo = (ID: number, title: string, finished: boolean) => {
+    console.log(`
     The Todo with ID: ${ID}
     Has a title of: ${title}
     Is it finished? ${finished}
   `);
-});
+}
